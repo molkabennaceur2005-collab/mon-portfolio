@@ -1,0 +1,370 @@
+/* Reset de base */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* Body et typographie */
+    body {
+    font-family: 'Raleway', sans-serif; /* Style de police différent */
+    background-color: #fff8dc; /* Cornsilk, couleur douce mais lumineuse */
+    color: #2c3e50; /* Bleu foncé élégant */
+    line-height: 1.6;
+    }
+/*Titres*/ 
+    h1, h2 {
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: #e91e63; /* Rose vibrant */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+/* H1 et H2 spécifiques */
+    h1 {
+    color: #ffffff; /* Rose vibrant */
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-family: 'Pacifico', cursive; /* Style différent pour le titre principal */
+    }
+
+    h2 {
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    font-family: 'Lobster', cursive; /* Autre style pour les sous-titres */
+    }
+
+/* En-tête */
+    .header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Dégradé orangé vif */
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-bottom: 4px solid #fd7e14;
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+    }
+
+    .header h1 {
+    font-size: 3.5em;
+    letter-spacing: 4px;
+    font-family: 'Pacifico', cursive;
+    }
+
+/* Barre de navigation */
+    .navbar {
+    background-color: #fff; /* Blanc éclatant */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #fd7e14;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    margin-top: -4px;
+    }
+
+    .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    }
+
+    .navbar li {
+    margin: 0;
+    }
+
+    .navbar a {
+    text-decoration: none;
+    color: #e91e63;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+    background-color: #e91e63;
+    color: #fff;
+    transform: translateY(-3px);
+    }
+
+/* Sections principales */
+    section.content, section.intro {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #fffaf0; /* Floral white, clair et chaleureux */
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    border: 1px solid #ffe4b5;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    }
+
+/* Hover effect pour sections */
+    section.content:hover, section.intro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    }
+
+/* Présentation */
+    .intro {
+    text-align: center;
+    position: relative;
+    }
+
+    .profile-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px dashed #f39c12; /* Couleur vive et graphique */
+    margin-top: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .profile-photo:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+/* Tables et listes */
+    .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    .info-table th, .info-table td {
+    padding: 16px;
+    border: 1px solid #ccc;
+    text-align: left;
+    }
+
+    .info-table th {
+    background-color: #ffe4e1; /* Couleur douce et chaleureuse */
+    color: #2c3e50;
+    font-weight: 700;
+    }
+
+/* Listes */
+    ul {
+    list-style: none; /* Pour plus de modernité */
+    margin-top: 20px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+
+    ul li {
+    font-size: 1.2em;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 25px;
+    color: #34495e;
+    font-family: 'Quicksand', sans-serif;
+    }
+
+/* Icônes ou images devant les listes (optionnel) */
+    ul li::before {
+    content: '✨'; /* Ou une petite icône SVG si tu veux */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #f39c12;
+    }
+
+/* Images dans les sections */
+    section.content img {
+    display: block;
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px solid #f39c12;
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section.content img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+/* Liens de navigation */
+    .navigation-links {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 1.2em;
+    }
+
+    .navigation-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f39c12;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    }
+
+    .navigation-links a:hover {
+    background-color: #f39c12;
+    color: #fff;
+    transform: translateY(-2px);
+    }
+    .paragraph-with-image {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    }
+
+    .paragraph-with-image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #f39c12;
+    transition: transform 0.3s;
+    }
+
+    .paragraph-with-image img:hover {
+    transform: scale(1.1);
+    }
+
+/* Style pour le bouton */
+    .bouton-haut {
+    position: fixed; /* Fixe le bouton en bas à droite */
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff; /* couleur bleue */
+    color: white;
+    border: none;
+    border-radius: 50%; /* pour la forme ronde */
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50px; /* largeur fixée pour garder la circularité */
+    height: 50px; /* hauteur fixée pour garder la circularité */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+  /* Optionnel : changer de couleur au survol */
+    .bouton-haut:hover {
+    background-color: #0056b3;
+    } 
+    
+  /* Ajustement pour l'icône SVG si nécessaire */
+    .bouton-haut svg {
+        width: 24px;
+        height: 24px;
+    } 
+    
+
+
+.projet {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px; /* espace entre l'image et le texte */
+    margin-top: 20px;
+}
+
+.projet img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #f39c12;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projet img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+footer {
+    background: linear-gradient(135deg, #ff6f61, #ffcc70); /* Dégradé orangé lumineux */
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1em;
+    color: #fff;
+    border-top: 4px solid #e67e22;
+    border-radius: 0 0 20px 20px;
+    box-shadow: inset 0 -3px 6px rgba(0,0,0,0.2);
+}
+/* Style pour le formulaire de contact */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fffaf0; /* Floral white */
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #e67e22;
+    outline: none;
+    box-shadow: 0 0 8px rgba(230, 126, 34, 0.5);
+}
+
+button[type="submit"] {
+    padding: 14px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
